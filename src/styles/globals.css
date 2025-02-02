@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -39,4 +39,124 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+
+/* Global Styles */
+body {
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: rgb(215, 215, 215);
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgb(23, 23, 23); /* Dark background */
+  padding: 10px 10px;
+  position: fixed; /* Stick to top */
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000; /* Ensures it stays above other content */
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: nowrap;
+}
+
+.navbar li {
+  display: inline;
+  white-space: nowrap;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px; /* ✅ Smaller font size */
+  padding: 8px 12px;
+}
+
+/* ToggleMessage */
+/* Prevent content from being hidden under navbar */
+body {
+  padding-top: 50px; 
+}
+/* Hidden button inside this container to the left */
+.hidden-container {
+  position: relative;
+  height: 100px;
+}
+
+.hidden-button {
+  font-size: 5px; 
+  color: rgb(184, 184, 184); /* Make text close to the colour of background */
+  background: transparent; /* Make background invisible */
+  border: none;
+  position: absolute;
+  bottom: 10px; /* location of hidden button */
+  left: 5%; /* location of hidden button */
+  cursor: pointer;
+}
+
+.hidden-button:hover {
+  color: black; /* On hover, reveal the button */
+  background: lightgray;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 3px 6px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 5px 5px;
+  font-size: 15px;
+  background-color: #110054;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #40ff00;
+  color: black;
+}
+
+/* List */
+
+li {
+  align-items: center;
+  background: white;
+  padding: 5px;
+  margin: 5px auto;
+  width: 50%;
+}
+
+li button {
+  background-color: red;
+}
+
+.title {
+  color: #110054;
+  text-align: center;
 }

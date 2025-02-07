@@ -2,7 +2,6 @@ import Navbar from "../components/Navbar";
 import Greeting from "../components/Greeting"; 
 import ToggleMessage from "../components/ToggleMessage";
 import ItemList from "../components/ItemList";
-import Counter from "../components/Counter";
 
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       <br/>
       <Greeting />
       <ToggleMessage /> 
-      <Counter />
       <br />
       <ItemList />
     </div>
